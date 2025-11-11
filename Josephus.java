@@ -4,7 +4,7 @@ public class Josephus {
         for (int i = 0; i < N; i++) {
             queue.enqueue(i + 1); // Typically 1 indexed
         }
-        // Currently gives penultimate for odd skip numbers and ultimate for even
+        // (FIXED) Currently gives penultimate for odd skip numbers and ultimate for even
         // numbers -- This was a problem with my queue.size() function!
         while (queue.size() > 1) {
             for (int i = 0; i < S - 1; i++) { // S - 1 because skip size is typically specified as nth person killed,
