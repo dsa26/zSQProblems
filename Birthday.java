@@ -1,3 +1,5 @@
+// Doesn't work -- didn't have time to figure out why
+
 public class Birthday {
     private static int generateRandom(int N) {
         return (int) Math.floor(Math.random() * N);
